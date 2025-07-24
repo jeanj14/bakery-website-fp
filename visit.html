@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Cafe Website</title>
+</head>
+<body>
+
+  <main>
+
+    <!-- Header and Navigation -->
+    <header>
+      <h1>Kitty-Cottage</h1>
+
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ourstory.html">Our Story</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="openinghours.html">Opening Hours</a></li>
+          <li><a href="visit.html" aria-current="page">Visit Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Location and Address -->
+    <section aria-labelledby="visit-heading">
+      <h2 id="visit-heading">Where to Find Us</h2>
+
+      <address>
+        Kitty-Cottage Bakery<br>
+        123 Pastry Lane<br>
+        Sweet Town, ST 45678<br>
+        Phone: <a href="tel:+60123456789">+60 12-345 6789</a><br>
+        Email: <a href="mailto:hello@kittycottage.com">hello@kittycottage.com</a>
+      </address>
+    </section>
+
+    <!-- Map Placeholder (optional iframe for Google Maps) -->
+    <section aria-labelledby="map-heading">
+      <h2 id="map-heading">Map</h2>
+      <p>Here’s where we’re located:</p>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.905118848883!2d101.68685531533449!3d3.139003697309243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4b7d70e3670b%3A0xe78c53c8d24471f3!2sKuala%20Lumpur!5e0!3m2!1sen!2smy!4v1614768877586!5m2!1sen!2smy" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Kitty-Cottage Bakery Map">
+      </iframe>
+    </section>
+
+    <!-- Contact Form -->
+    <section aria-labelledby="contact-form-heading">
+      <h2 id="contact-form-heading">Contact Us</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Your Details</legend>
+
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+          <button type="submit">Send</button>
+        </fieldset>
+      </form>
+    </section>
+    
+    <!-- Bakery Image -->
+    <figure>
+      <centere><img src="bakery1.jpg" alt="Inside view of Kitty-Cottage bakery" width="1000"></centere>
+    </figure>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Last updated: 
+        <time datetime="2025-07-24">July 24, 2025</time>
+      </p>
+     <p>We are not the only ones but we are the best</p>
+    <small>&copy; All rights reserved</small>
+    </footer>
+
+  </main>
+
+</body>
+</html>
