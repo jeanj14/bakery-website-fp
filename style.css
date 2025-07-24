@@ -11,6 +11,7 @@ body {
   background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 /* HEADER */
@@ -35,6 +36,10 @@ body {
   gap: 2rem;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .top-nav a {
   color: white;
   text-decoration: none;
@@ -46,21 +51,21 @@ body {
   text-decoration: underline;
 }
 
-.welcome {
+/* .welcome {
   position: relative;
   width: 100%;
   height: auto;
   overflow: hidden;
   justify-content: center;
-}
+} */
 
-.welcome figure img {
+/* .welcome figure img {
   width: 100%;
   max-height: auto;
   object-fit:contain; 
   display:block;
   background: #000; 
-}
+} */
 
 .welcome p {
   position: absolute;
@@ -72,6 +77,13 @@ body {
   text-align: center;
   font-size: 1.5rem;
   max-width: 80%;
+}
+
+main {
+  background-image: url("./assets/bakery1.jpg");
+  object-fit:contain; 
+  /* background-color: blue; */
+  height: 100%;
 }
 
 
@@ -88,4 +100,22 @@ footer small {
   margin-top: 0.5rem;
   font-size: 0.85rem;
   opacity: 0.9;
+}
+
+/* When the browser is at least 600px and above */
+@media screen and (max-width: 600px) {
+  ul.nav-list{
+    /* Apply some styles */
+    /* visibility: hidden; */
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .welcome p {
+    text-align: center;
+    font-size: 1.25rem;
+  }
 }
