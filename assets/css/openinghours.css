@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  color: #fff;
+  height: 100vh;
+  background-image: url("../images/bakery1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  object-fit:contain; 
+}
+
+.header {
+  background-color: #D09F24; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: white 5px solid;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.branding h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logo {
+  width: 2rem;
+  height: auto;
+}
+
+/* NAV */
+.mobile-menu {
+  display: none;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+} 
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.opening-cnt {
+  width: 100%;
+}
+
+.opening-cnt h2 {
+
+  margin: 0 auto;
+  color: #D09F24;
+  background-color: white;
+  border-color: #D09F24;
+  border: solid 5px;
+  padding: 5px;
+  border-radius: 0.5rem;
+  max-width: 40%;
+  font-size: 1.5rem;
+  margin: 1rem auto 1rem auto;
+  text-align: center;
+}
+
+.opening-table {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  border-collapse: collapse;
+  margin: 0 auto 2rem auto;
+  background: #fff;
+  color: #333;
+  border-radius: 0.5rem;
+}
+
+.opening-table thead{
+  border-radius: 0.5rem;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+th {
+  background-color: #D09F24;
+  color: #fff;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+section p {
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: #98710E;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+
+footer small {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .branding h1 {
+    font-size: 1.3rem;
+  }
+  .top-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .opening-cnt {
+    width: 95%;
+    padding: 0 0.5rem;
+  }
+  .opening-cnt h2 {
+    max-width: 100%;
+    font-size: 1.1rem;
+    padding: 5px 0.5rem;
+  }
+  .opening-table {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+  th, td {
+    padding: 0.5rem 0.3rem;
+  }
+  section {
+    padding: 0.5rem;
+  }
+  footer {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+}

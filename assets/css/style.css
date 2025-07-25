@@ -92,7 +92,7 @@ body {
 }
 
 main {
-  background-image: url("./assets/bakery1.jpg");
+  background-image: url("../images/bakery1.jpg");
   object-fit:contain; 
   /* background-color: blue; */
   height: 100%;
