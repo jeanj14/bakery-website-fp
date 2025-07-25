@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #D09F24; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: white 5px solid;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.branding h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logo {
+  width: 2rem;
+  height: auto;
+}
+
+/* NAV */
+.mobile-menu {
+  display: none;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+/* .welcome {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  justify-content: center;
+} */
+
+/* .welcome figure img {
+  width: 100%;
+  max-height: auto;
+  object-fit:contain; 
+  display:block;
+  background: #000; 
+} */
+
+.welcome p {
+  margin: 3rem auto 0 auto;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  max-width: 50%;;
+}
+
+main {
+  background-image: url("./assets/bakery1.jpg");
+  object-fit:contain; 
+  /* background-color: blue; */
+  height: 100%;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #98710E;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+
+footer small {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* When the browser is at least 600px and above */
+@media screen and (max-width: 600px) {
+  ul.nav-list{
+    /* Apply some styles */
+    /* visibility: hidden; */
+    display: none;
+  }
+
+  .branding h1{
+    font-size: 1.5rem;
+  }
+
+  .mobile-menu {
+    display: flex;
+    height: 2rem;
+    width: auto;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+  }
+
+  .welcome p {
+    text-align: center;
+    max-width: 90%;
+    font-size: 1.25rem;
+    margin: 0 auto;
+  }
+
+  .branding {
+    flex-direction: row-reverse;
+  }
+}
