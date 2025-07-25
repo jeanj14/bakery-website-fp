@@ -79,10 +79,29 @@ body {
 main {
   background-image: url("../images/bakery1.jpg");
   object-fit:contain; 
+  display: flex;
+  align-items: center;
   /* background-color: blue; */
   height: 100%;
 }
 
+section.menu {
+    margin: auto;
+    /* width: fit-content; */
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2px;
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 30px;
+}
+
+article > ul {
+    list-style: none;
+}
 
 /* FOOTER */
 footer {
@@ -122,6 +141,11 @@ footer small {
     flex-direction: column;
     justify-content: center;
     align-items: center;     
+  }
+
+  section.menu {
+    width: fit-content;
+    padding: 12px 18px;
   }
 
   .welcome p {
