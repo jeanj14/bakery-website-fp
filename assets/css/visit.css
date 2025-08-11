@@ -17,7 +17,7 @@ body {
 }
 
 .header {
-  background-color: #D09F24;
+  background-color: #1F2937;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,9 +84,9 @@ main {
 
 .visit-section h2 {
   margin: 0 auto;
-  color: #D09F24;
+  color: #1F2937;
   background-color: white;
-  border-color: #D09F24;
+  border-color: #1F2937;
   border: solid 5px;
   padding: 5px;
   border-radius: 0.5rem;
@@ -109,14 +109,14 @@ iframe {
 }
 
 form fieldset {
-  border: 1px solid #D09F24;
+  border: 1px solid #1F2937;
   border-radius: 0.5rem;
   padding: 1rem;
   background: #fff;
 }
 
 form legend {
-  color: #D09F24;
+  color: #1F2937;
   font-weight: bold;
 }
 
@@ -136,7 +136,7 @@ form textarea {
 }
 
 form button {
-  background: #D09F24;
+  background: #1F2937;
   color: #fff;
   border: none;
   padding: 0.75rem 2rem;
@@ -147,11 +147,11 @@ form button {
 }
 
 form button:hover {
-  background: #98710E;
+  background: #1F2937;
 }
 
 footer {
-  background-color: #98710E;
+  background-color: #1F2937;
   text-align: center;
   padding: 1rem;
   color: white;

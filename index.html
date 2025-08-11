@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kitty-Cottage Bakery Cafe</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Cafe Website</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
+  <main>
+
+    <!-- Header with Title and Navigation -->
   <header class="header">
 
     <div class ="branding"> 
@@ -18,6 +21,7 @@
     <nav aria-label="Main Navigation" class="top-nav">
       <img src="./assets/images/menu.svg" class="mobile-menu" alt="menu">
       <ul class="nav-list">
+
         <li><a href="ourstory.html">Our Story</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="openinghours.html">Opening Hours</a></li>
@@ -25,18 +29,77 @@
       </ul>
     </nav>
   </header>
-
   <main>
-    <section class="welcome">
-      <!-- <img src="bakery1.jpg" alt="Inside view of Kitty-Cottage bakery"> -->
-      <p>Welcome to our Kitty-Cottage bakery cafe serving delicious, home-style baked goods and hot coffee daily.</p>
-    </section>
-  </main>
 
-  <footer>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h2 class="hero-title">“Freshly baked happiness, every day.”</h2>
+      <p class="hero-paragraph">Welcome to our Kitty-Cottage bakery cafe serving delicious, home-style baked goods and hot coffee daily.</p>
+      <button type="button" class="hero-btn">Sign up</button>
+      </div>
+      <figure class="hero-figure">
+        <img class="hero-image" src="./assets/images/bakery1.jpg" alt="Placeholder image">
+      </figure>
+    </section>
+
+    <!-- Information Section -->
+    <section class="information">
+      <h2>Why choose Kitty-Cottage bakery?</h2>
+      <ul class="info-gallery">
+        <li>
+          <figure class="info-figure">
+            <img class="info-picture" src="./assets/images/il1.jpg" alt="Illustration 1">
+            <figcaption>Locally sourced ingredients for the best flavor.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="info-figure">
+            <img class="info-picture" src="./assets/images/ii2.jpg" alt="Illustration 2">
+            <figcaption>Baked fresh every single morning.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="info-figure">
+            <img class="info-picture" src="./assets/images/ii3.jpg" alt="Illustration 3">
+            <figcaption>Family recipes passed down for generations.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="info-figure">
+            <img class="info-picture" src="./assets/images/ii4.jpg" alt="Illustration 4">
+            <figcaption>Friendly service that makes you feel at home.</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+      <blockquote class="test-quote">
+        <p>
+        “SweetBite Bakery reminds me of my grandmother’s kitchen. Everything tastes homemade and comforting. Absolutely love it!”
+        </p>
+        <cite>- Sarah L., regular customer</cite>
+      </blockquote>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta">
+        <div class="cta-block">
+            <div class="cta-text">
+                <h2>Ready to taste the difference?</h2>
+                <p>Visit us today or order online to enjoy warm, freshly baked treats right at your door.</p>
+            </div>
+      <button class="cta-btn" type="button">Sign up</button>
+        </div>
+    </section>
+
+    <footer>
     <p>We are not the only ones but we are the best</p>
     <small>&copy; All rights reserved</small>
   </footer>
 
+  </main>
 </body>
 </html>

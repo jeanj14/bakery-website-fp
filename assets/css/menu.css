@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-  background-color: #D09F24; 
+  background-color: #1F2937; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,7 +105,7 @@ article > ul {
 
 /* FOOTER */
 footer {
-  background-color: #98710E;
+  background-color: #1F2937;
   text-align: center;
   padding: 1rem;
   color: white;

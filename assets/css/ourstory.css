@@ -7,14 +7,14 @@
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   color: #fff;
-  background-color: #f8f8f8;
+  background: linear-gradient(#1F2937 85%, #3882F6 ); ;
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
 .header {
-  background-color: #D09F24; 
+  background-color: #1F2937; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,53 +65,54 @@ body {
   text-decoration: underline;
 }
 
-
-.welcome p {
-  margin: 3rem auto 0 auto;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  max-width: 50%;;
-}
-
 main {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
   justify-content: center;
   align-items: center;     
-  background-image: url("../images/bakery1.jpg");
-  object-fit:contain; 
   height: 100%;
 }
 
 section {
     /* padding: 15px; */
-    background-color: rgba(0,0,0,0.6);
-    border-radius: 30px;
+
+    color: black;
 }
+
+
 
 .image-section {
     display: flex;
-    /* justify-content: space-around; */
-    /* width: fit-content; */
-    flex-wrap: wrap;
-    /* margin: auto; */
-}
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+  }
+
+.image-item {
+  max-height: 20rem;
+  border: #3882F6 5px solid;
+  border-radius: 1rem;
+
+} 
+
 
 .story {  
+    background-color: rgba(0,0,0,0.6);
     font-size: 1rem;
+    color: white;
     text-align: center;
-    padding: 5px 20px;
-    width: 50%;
-    margin: 5px 5%;
+    margin: 0 15px;
+    padding: 25px 20px;
+    border-radius: 1rem;
+
 }
 
 
 /* FOOTER */
 footer {
-  background-color: #98710E;
+  background-color: #1F2937;
   text-align: center;
   padding: 1rem;
   color: white;
