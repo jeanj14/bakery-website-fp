@@ -91,7 +91,7 @@ section {
   }
 
 .image-item {
-  max-height: 20rem;
+  width: 20rem;
   border: #3882F6 5px solid;
   border-radius: 1rem;
 
@@ -103,7 +103,7 @@ section {
     font-size: 1rem;
     color: white;
     text-align: center;
-    margin: 0 15px;
+    margin: 20px 15px;
     padding: 25px 20px;
     border-radius: 1rem;
 
@@ -134,7 +134,7 @@ footer small {
   }
 
   .story {
-    /* font-size: 10px; */
+    font-size: smaller
   }
 
   .branding h1{
@@ -164,4 +164,12 @@ footer small {
   .branding {
     flex-direction: row-reverse;
   }
+
+.image-item {
+  width: 16rem;
+  border: #3882F6 5px solid;
+  border-radius: 1rem;
+
+} 
+
 }
